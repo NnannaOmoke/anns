@@ -1,0 +1,13 @@
+The basis of a neural network is a perceptron
+To build a neural network we connect perceptrons in layers 
+Then, each perceptron in a layer is connected to the layer in front of it
+The first layer of a neural network is the input layer. The last layer is the output layer
+Any layer in between is a hidden layer. They are difficult to interpret.
+A deep neural network is one with 2 or more hidden layers
+A wide layer has a lot of perceptrons in them. A deep one has lots of layers
+Neural networks can approximate any continous function
+Constraints of neural networks are activation functions
+Common activation functions include:
+    tanh
+    rectified Linear Unit
+    softmax activation function
