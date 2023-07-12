@@ -11,3 +11,11 @@ Common activation functions include:
     tanh
     rectified Linear Unit
     softmax activation function
+The Sequential() creates a sequence of perceptrons. The Dense() basically defines the connections between the perceptrons
+Models are compiled with compile(). The choice of optimizer can be "adam" (very popular model), and others.
+The loss can be:
+    for multi class classification: categorical_cross_entropy
+    for binary class classification: binary_cross_entropy
+    for regression tasks: mse
+Metrics can be the usual metrics used problem-type
+when fitting, epochs are the number of times one goes over the dataset
