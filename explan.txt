@@ -11,6 +11,7 @@ Common activation functions include:
     tanh
     rectified Linear Unit
     softmax activation function
+    sigmoid
 The Sequential() creates a sequence of perceptrons. The Dense() basically defines the connections between the perceptrons
 Models are compiled with compile(). The choice of optimizer can be "adam" (very popular model), and others.
 The loss can be:
@@ -19,3 +20,8 @@ The loss can be:
     for regression tasks: mse
 Metrics can be the usual metrics used problem-type
 when fitting, epochs are the number of times one goes over the dataset
+keras models can be saved with the model.save() function. from keras.models.load_model provides a means to load keras models. keras models are usually saved with the .f5 extension
+batch sizes will help prevent overfitting, as the learner trains on a seperate batch on each epoch
+for binary class classification with deep learners, it is best to use a sigmoid activation function for the output layer
+callbacks help prevent overfitting, because they will stop the training after a number of epochs, if some value that its monitoring stops (increasing, decreasing,[dependent on mode]), after a set number of epochs
+another means of preventing overfitting is to enable dropout layers, which will turn off a certain percentage of perceptrons in the layer
